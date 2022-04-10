@@ -1,0 +1,2 @@
+# FastApiCheck
+Just having fun =) 
