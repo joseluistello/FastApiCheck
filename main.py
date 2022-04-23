@@ -22,3 +22,7 @@ async def get_employees(employe_id: int, department: Department, gender: str = N
     print(gender)
     return [{"id": 1, "name": "Bob"}, {"id":2, "name": "Pedro"}]
 
+@app.post("/employees")
+async def create_employee(employee):
+    print(employee)
+    return employee
