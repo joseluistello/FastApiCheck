@@ -8,11 +8,11 @@ class Department(str, Enum):
     ENGLISH = "english"
     CHEMISTRY = "chemistry"
 
-app = FastAPI()
+app = FastAPI(debug=True)
 
 
-@app.get("/")
-async def read_main():
+@app.get("/status")
+async def check_status():
     return {"message": "Hello World"}
 
 @app.get("/employees/{employee_id}")
